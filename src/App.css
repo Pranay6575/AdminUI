@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header{
+  background-color: #333366;
+  height: 40px;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  padding: 6px;
+  font-family: 300;
+  color:#cc085e;
+  font-family: Arial, Helvetica, sans-serif,;
+  font-size: 30px;
+}
+
+.searchBar {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 1rem;
+  
+}
+
+.searchBar input {
+  padding: 20px;
+  width: 80vw;
+  border: 2px solid black;
+  border-radius: 20px;
+  font-size: medium;
+  background-color: #ffeee7
+}
+
+.editButton {
+  text-align: center;
+  padding: 12px;
+  background: #333366;
+  border-radius: 12px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.editButton:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+  background-color: white;
+  color: #333366;
+}
+
+.editUser {
+  padding: 15px;
+  margin: 15px;
+  
+}
+
+button {
+  background-color: #333366;
+  margin: 6px;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1px solid #333366;
+  color: whitesmoke;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.button-selected{
+  background-color: #333366;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: medium;
+  margin-left: 11rem;
+}
+
+.button-group {
+  position: absolute;
+  bottom: 1vh;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+tr {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 80vw;
+  text-align: left;
+  padding-block: 12px;
+  border-bottom: 1px solid #aaa;
+}
+
+td,th {
+  width: 20%;
+}
+tr td:nth-child(4) {
+  text-transform: capitalize;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  justify-content: space-evenly;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
 }
